@@ -3,12 +3,18 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 ### author: Peter WANG (busg please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
 
 # Structure of the Repo:
-- ## I. Introduction to the platforms
-- ## II. Introduction to Function Use
+- ## I. Platform Specifications
+- ## II. Function Uses
 
+# I. Platform Specifications
 
+### Hardware Specifications (provided by AgileX official)
+- see the intro video here: 
+### Car Warmup
+- Long press the switch to start (short press to pause the program). Observe the electricity meter, and charge or replace the battery in time when the last red light is on.
+- Observe the status of the front latch and the color of the vehicle light to determine the current mode:
 
-# II. Introduction to Function Use
+# II. Function Uses
 
 
 ## Setup
