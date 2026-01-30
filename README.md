@@ -122,6 +122,5 @@ roslaunch limo_bringup limo_rtab_nav2_ackermann.launch.py
 
 RTAB-Map localization typically removes the need for manual initial-pose alignment; We usually start sending Nav2 goals directly once localization is stable. 
 
-## Loading Image / LiDAR Data (placeholder)
-
+## Loading Image / LiDAR Data
 
