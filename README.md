@@ -25,7 +25,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-(You’ll typically want to `source` in every new terminal or add it to your shell startup.) 
+(source in every new terminal or add it to home shell startup.) 
 
 ## Bringup and Interfaces
 
@@ -73,13 +73,13 @@ This produces `map.yaml` + `map.pgm` (or equivalent) in the current directory.
 ros2 launch limo_bringup limo_nav2_diff.launch.py
 ```
 
-If you’re using Ackermann mode:
+If using Ackermann mode:
 
 ```bash
 roslaunch limo_bringup limo_nav2_ackermann.launch.py
 ```
 
-In RViz2, you’ll usually do an initial pose estimate (2D Pose Estimate) if the laser overlay doesn’t align with the map, then send goals with 2D Nav Goal. Multi-goal navigation is supported from the RViz Nav2 panel. 
+In RViz2, we usually do an initial pose estimate (2D Pose Estimate) if the laser overlay doesn’t align with the map, then send goals with 2D Nav Goal. Multi-goal navigation is supported from the RViz Nav2 panel. 
 
 ---
 
@@ -100,7 +100,7 @@ ros2 launch astra_camera dabai.launch.py
 ros2 launch limo_bringup limo_rtab_rgbd.launch.py
 ```
 
-The database is saved as `rtabmap.db` under your home (often within the hidden `.ros/` directory). 
+The database is saved as `rtabmap.db` under directory home (often within the hidden `.ros/` directory). 
 
 **3) Localization using the saved DB**
 
@@ -120,7 +120,7 @@ Ackermann variant:
 roslaunch limo_bringup limo_rtab_nav2_ackermann.launch.py
 ```
 
-RTAB-Map localization typically removes the need for manual initial-pose alignment; you can usually start sending Nav2 goals directly once localization is stable. 
+RTAB-Map localization typically removes the need for manual initial-pose alignment; We usually start sending Nav2 goals directly once localization is stable. 
 
 ## Loading Image / LiDAR Data (placeholder)
 
