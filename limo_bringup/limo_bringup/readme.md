@@ -1,7 +1,7 @@
 
-下面的脚本一条一条运行， 注意不能在后台运行
+the commands are expected to be run one-by-one
  
-# 导航
+# Navigation
 
 ```shell
 rviz2
@@ -15,7 +15,7 @@ sleep 2
 ros2 launch limo_bringup limo_localization.launch.py
 ```
 
-# 建图
+# Mapping
 
 ```shell
 ros2 launch limo_bringup limo_start.launch.py
@@ -25,7 +25,7 @@ ros2 launch build_map_2d revo_build_map_2d.launch.py
 ```
 
 
-# 键盘控制
+# teleop keyboard control
 
 ```shell
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
