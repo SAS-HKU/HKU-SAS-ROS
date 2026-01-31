@@ -16,17 +16,6 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 
 # II. Function Uses
 
-
-## Setup
-
-```bash
-cd ~/agilex_ws
-colcon build --symlink-install
-source install/setup.bash
-```
-
-(source in every new terminal or add it to home shell startup.) 
-
 ## Bringup and Interfaces
 
 The chassis driver publishes the standard control / state topics (e.g., `/cmd_vel`, `/imu`, `/tf`, `/wheel/odom`, `/limo_status`). Start it with: 
