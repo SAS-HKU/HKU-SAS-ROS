@@ -17,7 +17,7 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 
 Start keyboard control:
 ```bash
-roslaunch limo_bringup limo_teletop_keyboard.launch
+ros2 launch limo_bringup limo_teletop_keyboard.launch
 ```
 
 # II. Function Uses
