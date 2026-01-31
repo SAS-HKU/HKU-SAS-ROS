@@ -13,7 +13,12 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 - Login ssh/nx: please check directly from the onboard Nomachine
 ### Car Warmup
 - Long press the switch to start (short press to pause the program). Observe the electricity meter, and charge or replace the battery in time when the last red light is on.
-- Observe the status of the front latch and the color of the vehicle light to determine the current mode:
+- Observe the status of the front latch and the color of the vehicle light to determine the current mode
+
+Start keyboard control:
+```bash
+roslaunch limo_bringup limo_teletop_keyboard.launch
+```
 
 # II. Function Uses
 
