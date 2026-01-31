@@ -8,8 +8,9 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 
 # I. Platform Specifications
 
-### Hardware Specifications (provided by AgileX official)
-- see the intro video here: 
+### Hardware Specifications
+- Nomachine login: username: agilex password: agx
+- Login ssh/nx: please check directly from the onboard Nomachine
 ### Car Warmup
 - Long press the switch to start (short press to pause the program). Observe the electricity meter, and charge or replace the battery in time when the last red light is on.
 - Observe the status of the front latch and the color of the vehicle light to determine the current mode:
