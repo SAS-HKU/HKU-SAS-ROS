@@ -97,6 +97,8 @@ ros2 launch limo_bringup limo_rtab_rgbd.launch.py
 
 The database is saved as `rtabmap.db` under directory home (often within the hidden `.ros/` directory). 
 
+[![Watch the demo](http://i3.ytimg.com/vi/yJlPozCGnqk/hqdefault.jpg)](https://youtu.be/yJlPozCGnqk)
+
 **3) Localization using the saved DB**
 
 ```bash
