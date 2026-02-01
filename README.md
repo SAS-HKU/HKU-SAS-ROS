@@ -121,4 +121,5 @@ RTAB-Map localization typically removes the need for manual initial-pose alignme
 
 ## Implementation Examples:
 Car following trial:
+
 [![Watch the demo](http://i3.ytimg.com/vi/yJlPozCGnqk/hqdefault.jpg)](https://youtu.be/yJlPozCGnqk)
