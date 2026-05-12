@@ -5,6 +5,16 @@ developer: Peter WANG (bugs please contact peterwang.dase@connect.hku.hk/peter.w
 principal investigator: Prof. Chen Sun (c87sun@hku.hk)
 
 
+## Implementation Examples:
+Car following trial:
+
+[![Watch the demo](https://i.ytimg.com/an_webp/yJlPozCGnqk/mqdefault_6s.webp?du=3000&sqp=CI_zjNAG&rs=AOn4CLC_aL-d_WqaeNpW6sNX1K--X-ee-A)](https://youtu.be/yJlPozCGnqk)
+
+Lidar following trial (the robot follows the student):
+
+[![Watch the demo](https://i.ytimg.com/an_webp/b306i8XMZHo/mqdefault_6s.webp?du=3000&sqp=CJKYjdAG&rs=AOn4CLDbaIeuYsf9kBZIWHDmq63Wc2I3iw)](https://youtu.be/b306i8XMZHo)
+
+
 ## I. Platform Specifications
 
 ### Hardware Specifications
@@ -222,12 +232,3 @@ Use a school-hosted backend runner, not GitHub Actions as the main path. Student
   - nightly CI for the official task templates
 - If GitHub is used later, connect it to the same runner logic rather than creating a separate grading path.
 
-
-## Implementation Examples:
-Car following trial:
-
-[![Watch the demo](https://i.ytimg.com/an_webp/yJlPozCGnqk/mqdefault_6s.webp?du=3000&sqp=CI_zjNAG&rs=AOn4CLC_aL-d_WqaeNpW6sNX1K--X-ee-A)](https://youtu.be/yJlPozCGnqk)
-
-Lidar following trial (the robot follows the student):
-
-[![Watch the demo](https://i.ytimg.com/an_webp/b306i8XMZHo/mqdefault_6s.webp?du=3000&sqp=CJKYjdAG&rs=AOn4CLDbaIeuYsf9kBZIWHDmq63Wc2I3iw)](https://youtu.be/b306i8XMZHo)
