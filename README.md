@@ -4,12 +4,12 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 author: Peter WANG (busg please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
 principal investigator: Prof. Chen Sun (c87sun@hku.hk)
 
-# Structure of the Repo:
-- ## I. Platform Specifications
-- ## II. MentorPi ROS Program Map for Student Completion Tasks
-- ## III. Other General Function Uses
+## Structure of the Repo:
+- ### I. Platform Specifications
+- ### II. MentorPi ROS Program Map for Student Completion Tasks
+- ### III. Other General Function Uses
 
-# I. Platform Specifications
+## I. Platform Specifications
 
 ### Hardware Specifications
 - Nomachine login: username: agilex password: agx
@@ -23,11 +23,11 @@ Start keyboard control:
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-# II. MentorPi ROS Program Map for Student Completion Tasks
+## II. MentorPi ROS Program Map for Student Completion Tasks
 
 Source archive checked: `C:/MentorPi/src.zip`
 
-## 1. Mecanum Chassis Speed ​​Control
+### 1. Mecanum Chassis Speed ​​Control
 
 | Program / file | ROS name | Role |
 |---|---|---|
@@ -43,7 +43,7 @@ Good student task targets:
 - Complete wheel speed equations in `MecanumChassis.set_velocity()`
 - Complete `Controller.cmd_vel_callback()` for `MentorPi_Mecanum`
 
-## 2. Lidar obstacle avoidance
+### 2. Lidar obstacle avoidance
 
 | Program / file | ROS name | Role |
 |---|---|---|
@@ -62,7 +62,7 @@ student task targets:
 - Decide turn/forward behavior based on obstacle distance
 - Publish the final `geometry_msgs/Twist` to `/controller/cmd_vel`
 
-## 3. Lidar following
+### 3. Lidar following
 
 | Program / file | ROS name | Role |
 |---|---|---|
@@ -79,7 +79,7 @@ student task targets:
 - Complete distance control and deadband handling
 - Publish `Twist` commands to follow the object
 
-## Likely ROS packages to build
+### Likely ROS packages to build
 
 `interfaces`, `ros_robot_controller_msgs`, `sdk`, `ros_robot_controller`, `controller`, `peripherals`, `app`
 
@@ -89,9 +89,9 @@ Suggested build command after extracting into the ROS2 workspace:
 colcon build --packages-select interfaces ros_robot_controller_msgs sdk ros_robot_controller controller peripherals app
 
 
-# III. Function Uses
+## III. Function Uses
 
-## Bringup and Interfaces
+### Bringup and Interfaces
 
 The chassis driver publishes the standard control / state topics (e.g., `/cmd_vel`, `/imu`, `/tf`, `/wheel/odom`, `/limo_status`). Start it with: 
 
