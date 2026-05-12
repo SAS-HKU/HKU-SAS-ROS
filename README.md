@@ -2,10 +2,12 @@
 The repo contains the basic ROS2 packages for multiple functionalties available for R&D related purposes
 
 author: Peter WANG (busg please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
+principal investigator: Prof. Chen Sun (c87sun@hku.hk)
 
 # Structure of the Repo:
 - ## I. Platform Specifications
-- ## II. Function Uses
+- ## II. MentorPi ROS Program Map for Student Completion Tasks
+- ## III. Other General Function Uses
 
 # I. Platform Specifications
 
@@ -21,7 +23,73 @@ Start keyboard control:
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-# II. Function Uses
+# II. MentorPi ROS Program Map for Student Completion Tasks
+
+Source archive checked: `C:/MentorPi/src.zip`
+
+## 1. Mecanum Chassis Speed ​​Control
+
+| Program / file | ROS name | Role |
+|---|---|---|
+| `src/driver/controller/launch/controller.launch.py` | `ros2 launch controller controller.launch.py` | Main launch for chassis control |
+| `src/driver/controller/launch/odom_publisher.launch.py` | included launch | Starts robot description, controller board, and odometry node |
+| `src/driver/controller/controller/odom_publisher_node.py` | executable: `odom_publisher` | Subscribes to `controller/cmd_vel`, selects mecanum control, publishes motor speeds |
+| `src/driver/controller/controller/mecanum.py` | module: `controller.mecanum` | Converts `linear.x`, `linear.y`, `angular.z` into 4 wheel speeds |
+| `src/driver/controller/config/calibrate_params.yaml` | parameter file | Linear/angular correction factors |
+| `src/driver/ros_robot_controller/ros_robot_controller/ros_robot_controller_node.py` | executable: `ros_robot_controller` | Sends `MotorsState` commands to the STM32/motor controller |
+
+Good student task targets:
+- Complete `MecanumChassis.speed_covert()`
+- Complete wheel speed equations in `MecanumChassis.set_velocity()`
+- Complete `Controller.cmd_vel_callback()` for `MentorPi_Mecanum`
+
+## 2. Lidar obstacle avoidance
+
+| Program / file | ROS name | Role |
+|---|---|---|
+| `src/app/launch/lidar_node.launch.py` | `ros2 launch app lidar_node.launch.py debug:=true` | Starts LiDAR app node; optionally starts LiDAR and chassis control |
+| `src/app/app/lidar_controller.py` | executable: `lidar_controller`, node: `lidar_app` | Main LiDAR obstacle avoidance/following program |
+| `src/peripherals/launch/lidar.launch.py` | included launch | Generic LiDAR launch wrapper |
+| `src/peripherals/launch/include/ldlidar_LD19.launch.py` | node: `LD19` | LD19 LiDAR driver launch |
+| `src/peripherals/launch/include/sllidar_a1.launch.py` | node: `sllidar_node` | SLLidar A1 driver launch |
+| `src/peripherals/launch/include/ydlidar_g4.launch.py` | node: `ydlidar_ros2_driver_node` | YDLidar G4 driver launch |
+| `src/interfaces/srv/SetInt64.srv` | service type | Used by `/lidar_app/set_running`; `data: 1` starts obstacle avoidance |
+| `src/interfaces/srv/SetFloat64List.srv` | service type | Used by `/lidar_app/set_param` for threshold, scan angle, speed |
+
+student task targets:
+- Complete `running_mode == 1` logic in `lidar_callback()`
+- Compute `min_dist_left` and `min_dist_right`
+- Decide turn/forward behavior based on obstacle distance
+- Publish the final `geometry_msgs/Twist` to `/controller/cmd_vel`
+
+## 3. Lidar following
+
+| Program / file | ROS name | Role |
+|---|---|---|
+| `src/app/launch/lidar_node.launch.py` | `ros2 launch app lidar_node.launch.py debug:=true` | Same launch file as obstacle avoidance |
+| `src/app/app/lidar_controller.py` | executable: `lidar_controller`, node: `lidar_app` | `running_mode == 2` implements LiDAR following |
+| `src/driver/sdk/sdk/pid.py` | module: `sdk.pid` | PID controller used for yaw and distance control |
+| `src/driver/sdk/sdk/common.py` | module: `sdk.common` | Utility functions such as output range limiting |
+| `src/interfaces/srv/SetInt64.srv` | service type | `/lidar_app/set_running` with `data: 2` starts following |
+
+student task targets:
+- Merge left/right LaserScan ranges
+- Find nearest object distance and angle
+- Complete PID-based yaw control
+- Complete distance control and deadband handling
+- Publish `Twist` commands to follow the object
+
+## Likely ROS packages to build
+
+`interfaces`, `ros_robot_controller_msgs`, `sdk`, `ros_robot_controller`, `controller`, `peripherals`, `app`
+
+Suggested build command after extracting into the ROS2 workspace:
+
+```bash
+colcon build --packages-select interfaces ros_robot_controller_msgs sdk ros_robot_controller controller peripherals app
+
+
+# III. Function Uses
 
 ## Bringup and Interfaces
 
