@@ -182,12 +182,12 @@ roslaunch limo_bringup limo_rtab_nav2_ackermann.launch.py
 
 RTAB-Map localization typically removes the need for manual initial-pose alignment; We usually start sending Nav2 goals directly once localization is stable. 
 
-# Student ROS Submission Pipeline
+## Student ROS Submission Pipeline
 
-## Summary
+### Summary
 Use a school-hosted backend runner, not GitHub Actions as the main path. Students upload only the assigned task files from the HTML website. The backend inserts those files into a locked instructor ROS2 workspace template, runs `colcon build` and tests inside a Docker ROS2 environment, then returns build/test results to the website. GitHub can remain optional for instructor templates or advanced students, but it should not be required for normal classroom submission.
 
-## Key Logic
+### Key Logic
 - Website flow: student selects lesson task, uploads completed file, submits, then watches status: `queued -> building -> testing -> passed/failed`.
 - Backend flow: create isolated job workspace, copy instructor template, replace only allowed files, run validation, store logs and result JSON.
 - ROS runner: Docker image mirrors the robot ROS2 environment and runs:
@@ -205,7 +205,7 @@ Use a school-hosted backend runner, not GitHub Actions as the main path. Student
   - `artifact_path`
 - Only passed submissions become “ROS runnable artifacts”. Later, a separate robot/ROS runtime queue can deploy these artifacts to real hardware.
 
-## Task Design
+### Task Design
 - Each lesson gets a task manifest, for example:
   - `mecanum_speed_control`: allowed file `controller/mecanum.py`
   - `lidar_obstacle_avoidance`: allowed file `app/lidar_controller.py`
@@ -213,7 +213,7 @@ Use a school-hosted backend runner, not GitHub Actions as the main path. Student
 - The manifest defines allowed upload files, expected package build command, tests, timeout, and feedback messages.
 - Students should complete marked blanks or replace a single file, not upload the whole ROS workspace.
 
-## GitHub Role
+### GitHub Role
 - Do not use GitHub Actions for the normal upload path.
 - Use GitHub for:
   - storing instructor templates
