@@ -4,10 +4,6 @@ The repo contains the basic ROS2 packages for multiple functionalties available 
 author: Peter WANG (busg please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
 principal investigator: Prof. Chen Sun (c87sun@hku.hk)
 
-## Structure of the Repo:
-- ### I. Platform Specifications
-- ### II. MentorPi ROS Program Map for Student Completion Tasks
-- ### III. Other General Function Uses
 
 ## I. Platform Specifications
 
