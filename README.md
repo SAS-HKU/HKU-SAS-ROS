@@ -226,7 +226,7 @@ Use a school-hosted backend runner, not GitHub Actions as the main path. Student
 ## Implementation Examples:
 Car following trial:
 
-[![Watch the demo](http://i3.ytimg.com/vi/yJlPozCGnqk/hqdefault.jpg)](https://youtu.be/yJlPozCGnqk)
+[![Watch the demo](https://i.ytimg.com/an_webp/yJlPozCGnqk/mqdefault_6s.webp?du=3000&sqp=CI_zjNAG&rs=AOn4CLC_aL-d_WqaeNpW6sNX1K--X-ee-A)](https://youtu.be/yJlPozCGnqk)
 
 Lidar following trial (the robot follows the student):
 
