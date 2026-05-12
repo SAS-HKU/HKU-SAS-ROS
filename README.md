@@ -1,8 +1,10 @@
 # HKU-SAS ROS platform
-The repo contains the basic ROS2 packages for multiple functionalties available for R&D related purposes
+The repo contains the basic ROS2 packages for multiple functionalties available for R&D related purposes (this project is funded by UGC Teaching Development Grant)
 
-developer: Peter WANG (bugs please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
-principal investigator: Prof. Chen Sun (c87sun@hku.hk)
+Project principal investigator: Prof. Chen Sun (c87sun@hku.hk)
+
+Developer: Peter WANG (bugs please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
+
 
 
 ## Implementation Examples:
