@@ -12,11 +12,11 @@ UI maintenace: Yiming Shu (yiming.shu@connect.hku.hk)
 ## Implementation Examples:
 Car following trial:
 
-[![Watch the demo](https://i.ytimg.com/an_webp/yJlPozCGnqk/mqdefault_6s.webp?du=3000&sqp=CI_zjNAG&rs=AOn4CLC_aL-d_WqaeNpW6sNX1K--X-ee-A)](https://youtu.be/yJlPozCGnqk)
+[![Watch the demo](https://i9.ytimg.com/vi_webp/yJlPozCGnqk/mq1.webp?sqp=CJyvj9AG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDvk16JA6GAuLKWtpZ-OtfIZcBZFw)](https://youtu.be/yJlPozCGnqk)
 
 Lidar following trial (the robot follows the student):
 
-[![Watch the demo](https://i.ytimg.com/an_webp/b306i8XMZHo/mqdefault_6s.webp?du=3000&sqp=CJKYjdAG&rs=AOn4CLDbaIeuYsf9kBZIWHDmq63Wc2I3iw)](https://youtu.be/b306i8XMZHo)
+[![Watch the demo](https://i9.ytimg.com/vi_webp/b306i8XMZHo/mq1.webp?sqp=CJyvj9AG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgTyh_MA8=&rs=AOn4CLDskXxOgDHJgs9MBMEetuBPLLcHZw)](https://youtu.be/b306i8XMZHo)
 
 
 ## I. Platform Specifications
