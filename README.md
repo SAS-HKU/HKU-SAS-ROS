@@ -18,6 +18,10 @@ Lidar following trial (the robot follows the student):
 
 [![Watch the demo](https://i9.ytimg.com/vi_webp/b306i8XMZHo/mq1.webp?sqp=CJyvj9AG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgTyh_MA8=&rs=AOn4CLDskXxOgDHJgs9MBMEetuBPLLcHZw)](https://youtu.be/b306i8XMZHo)
 
+Mapping trial:
+
+[![Watch the demo](https://i9.ytimg.com/vi_webp/D1kEoad1aVk/mq2.webp?sqp=CJyvj9AG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDyuN2ji1fREvKcFNptUjQ5XRT-vg
+)](https://youtu.be/D1kEoad1aVk)
 
 ## I. Platform Specifications
 
