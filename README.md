@@ -7,7 +7,7 @@ Developer: Peter WANG (bugs please contact peterwang.dase@connect.hku.hk/peter.w
 
 UI maintenace: Yiming Shu (yiming.shu@connect.hku.hk)
 
-
+![car1](assests/SAS-ROS.png)
 
 ## Implementation Examples:
 Car following trial:
@@ -24,11 +24,6 @@ Mapping trial:
 )](https://youtu.be/D1kEoad1aVk)
 
 ## I. Platform Specifications
-![car1](assests/IMG_0561.jpeg)
-
-![car1](assests/IMG_0562.jpeg)
-
-![car1](assests/IMG_0563.jpeg)
 
 ### Hardware Specifications
 - Nomachine login:
