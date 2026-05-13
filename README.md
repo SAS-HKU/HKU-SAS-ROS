@@ -150,6 +150,10 @@ ros2 run nav2_map_server map_saver_cli -f map
 
 This produces `map.yaml` + `map.pgm` (or equivalent) in the current directory. 
 
+Example mapping result in HW103M, HKU:
+
+![car1](assests/map11.jpg)
+
 **4) Run Nav2 localization + navigation (differential / track / mecanum modes)**
 
 ```bash
