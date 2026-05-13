@@ -5,7 +5,7 @@ Project principal investigator: Prof. Chen Sun (c87sun@hku.hk)
 
 Developer: Peter WANG (bugs please contact peterwang.dase@connect.hku.hk/peter.w030522@gmail.com)
 
-UI maintenace: Yiming Shu (yining.shu@connect.hku.hk)
+UI maintenace: Yiming Shu (yiming.shu@connect.hku.hk)
 
 
 
