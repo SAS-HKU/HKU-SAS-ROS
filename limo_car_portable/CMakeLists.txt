@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(limo_car_portable)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch gazebo meshes rviz urdf worlds DESTINATION share/${PROJECT_NAME})
+install(FILES README.md SOURCE.md DESTINATION share/${PROJECT_NAME})
+ament_package()
