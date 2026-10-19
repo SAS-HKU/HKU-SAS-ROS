@@ -9,6 +9,10 @@ UI maintenace: Yiming Shu (yiming.shu@connect.hku.hk)
 
 ![car1](assests/SAS-ROS.png)
 
+## Portable LiMo simulation model
+
+The self-contained [`limo_car_portable`](limo_car_portable/README.md) package includes Ackermann URDF/Xacro, DAE/STL meshes, sensors, and launch files for RViz and Gazebo Classic with ROS 2 Humble. Copy this package into a separate workspace to simulate without hardware drivers. See its README for installation, validation results, and modern Gazebo compatibility limits.
+
 ## Implementation Examples:
 Car following trial:
 
